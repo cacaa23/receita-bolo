@@ -1,0 +1,159 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --fonte-cabecalho: 'lexend', sans-serif;
+    --fonte-principal: 'roboto', sans-serif;
+    --cor-cabecalho: #21a0a0;
+    --cor-fonte-cabecalho: #246967;
+    --cor-fonte-principal: #0f0f0f;
+    --cor-fundo: #FCFFF7;
+    --cor-fundo-titulo: #c7cac4;
+    --cor-destaque: #729635;
+}
+
+.container{
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte-principal);
+    font-family: var(--fonte-principal);
+}
+
+.cabecalho{
+    background-image: url(../imagens/bolo-de-banana-e-maca-fit.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   padding: 1em;
+   color: var(--cor-fonte-cabecalho);
+   background-color: var(--cor-cabecalho);
+   font-family: var(--fonte-cabecalho);
+   font-weight: 700;
+}
+
+.titulo__principal{
+   padding: 1em;
+   font-weight: 700;
+   text-align: center;
+   font-size: 48px;
+}
+
+.titulo__destaque{
+    color: var(--cor-destaque);
+    text-decoration: underline;
+}
+
+.container img{
+    max-width: 1080px;
+    max-height: 1200px; 
+    width: auto;
+    height: auto;
+}
+
+.imagem{
+    margin: 0 33em;
+    border-radius: 8px;
+    margin-bottom: 150px;
+}
+
+.ingredientes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3em;
+    width: auto;
+}
+
+.ingredientes__titulo{
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1em 0;
+    width: 34.6em;
+}
+
+.ingredientes__lista{
+    list-style: none;
+    padding: 0;
+    width: 34.6em;
+    border-top: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.ingredientes__lista__item{
+    padding: 0.4em;
+    width: 40.6em;
+}
+
+.ingredientes__imagens{
+    margin-right: 1em;
+}
+
+.modo__preparo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 3em;
+}
+
+.modo__preparo__titulo{
+    background-color: var(--cor-fundo-titulo);
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 1em 0;
+    width: 34.6em;
+    border: solid 1px;
+}
+
+.modo__preparo__lista{
+    border: solid 1px black;
+    list-style: none;
+}
+
+.modo__preparo__passo{
+    padding: 1em;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ingredientes__lista{
+        margin: 2em 0;
+        width: 70%;
+    }
+
+    .ingredientes__titulo{
+        padding: 0.3em;
+        width: 70%;
+    }
+
+    .ingredientes__lista__item{
+        width: 70%;
+    }
+
+    .modo__preparo__titulo{
+        width: 99.5%
+    }
+
+    .modo__preparo{
+        margin: 3em 1em;
+        width: 90%;
+    }
+
+}
+
+
